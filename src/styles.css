@@ -259,7 +259,8 @@ input::-moz-selection, textarea::-moz-selection {
 .platform-download-copy small { color: #94949c; font-size: 8px; font-weight: 600; }
 .platform-download-copy strong { overflow: hidden; color: #25252c; font-size: 11px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
 .platform-download-arrow { flex: 0 0 auto; margin-left: auto; color: #1763dd; }
-.platform-download-soon { background: linear-gradient(145deg,#fafafa,#f5f5f7); }
+.platform-download-soon { background: linear-gradient(145deg,#fafafa,#f5f5f7); cursor: default; }
+.platform-download-soon:hover { transform: none; border-color: #e6e8ee; box-shadow: 0 7px 18px rgba(38,42,55,.045),inset 0 1px 0 #fff; cursor: default; }
 .platform-download-soon .platform-download-icon { color: #73747d; background: #ececef; }
 .soon-badge { flex: 0 0 auto; margin-left: auto; padding: 4px 6px; border-radius: 999px; color: #8a6b3e; background: #f6ead8; font-size: 7px; font-weight: 800; letter-spacing: .08em; }
 .single-download-fallback { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; }

@@ -146,7 +146,7 @@ export const apps = [
       { label: 'Download for Mac', shortLabel: 'Mac', url: 'https://drive.usercontent.google.com/download?id=1NNaP3kiP8_o8Az92hXx25QKHlP3rR-Fd&export=download&authuser=0&confirm=t&uuid=bef5b52d-db6d-49a8-8474-46d61585eee9&at=AMrWOn1GxJeyisYENn5xqa6qv0UM:1794246288829' },
       { label: 'Download for Windows', shortLabel: 'Windows', url: 'https://drive.usercontent.google.com/download?id=1wsgiWDC8WdaXUS0i5gCZBf33Z8JAekD4&export=download&authuser=0&confirm=t&uuid=9623638f-8abe-4074-ad38-0acff5a589a4&at=AMrWOn2PPkK7pqPvvow5Z64PRT3y:1794246285303' },
       { label: 'Download Android APK', shortLabel: 'Android APK', url: 'https://drive.usercontent.google.com/download?id=1-FSwGwbFk2R3_jMFGfsvuszcDeyjRWyk&export=download&authuser=0&confirm=t&uuid=327889f0-696d-4ad0-9b93-1ef44cbea219&at=AMrWOn22yZMgxFoTrcwR40_bHRVp:1794246271856' },
-    ] as { label: string; shortLabel: string; url: string }[],
+    ] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
     screenshots: [
       '/assets/apps/project-manager/interface-report.png',
       '/assets/apps/project-manager/interface-dashboard.png',
@@ -162,7 +162,28 @@ export const apps = [
     icon: '/assets/apps/youtube-pro.webp',
     accent: 'red',
     downloadUrl: null as string | null,
-    downloads: [] as { label: string; shortLabel: string; url: string }[],
+    downloads: [
+      {
+        label: 'Download for Mac',
+        shortLabel: 'Mac',
+        url: 'https://drive.usercontent.google.com/download?id=1blqOMGR-K7hXH_k7-8wpAX1lGE6Iup_3&export=download&authuser=0&confirm=t&uuid=ab6c7d49-d2e6-4307-9c94-162d43f76517&at=AMrWOn1MRy_2On2sEIgXnOZSX8M_:1794394015738',
+      },
+      {
+        label: 'Download for Windows',
+        shortLabel: 'Windows',
+        url: 'https://drive.usercontent.google.com/download?id=1WucFdb6i0Ipy8aDxrBTDm7RBiDAW1GVZ&export=download&authuser=0&confirm=t&uuid=fc3b2a9e-f7e4-4219-8bbb-a59aff332933&at=AMrWOn2jRcedW6GE3Ysp2uQ0sv-x:1794394035082',
+      },
+      {
+        label: 'Android coming soon',
+        shortLabel: 'Android',
+        comingSoon: true,
+      },
+      {
+        label: 'iOS coming soon',
+        shortLabel: 'iOS',
+        comingSoon: true,
+      },
+    ] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
     screenshots: [
       '/assets/apps/youtube-pro/interface-1.png',
       '/assets/apps/youtube-pro/interface-2.png',
@@ -177,8 +198,8 @@ export const apps = [
     description: 'A browser extension for previewing and comparing YouTube thumbnail options in context.',
     icon: '/assets/apps/thumbnailkit.webp',
     accent: 'violet',
-    downloadUrl: null as string | null,
-    downloads: [] as { label: string; shortLabel: string; url: string }[],
+    downloadUrl: 'https://takeout-download-drive.usercontent.google.com/download/ThumbKit-20261111T104537Z-1-001.zip?j=4126fc3a-4a4a-4154-be33-c81ae071b624&i=0&user=324285920959&authuser=0',
+    downloads: [] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
     screenshots: [
       '/assets/apps/thumbnailkit/interface-1.png',
       '/assets/apps/thumbnailkit/interface-2.png',
@@ -193,8 +214,8 @@ export const apps = [
     description: 'A browser extension for collecting and organizing creative references from Behance.',
     icon: '/assets/apps/behancekit.webp',
     accent: 'blue',
-    downloadUrl: null as string | null,
-    downloads: [] as { label: string; shortLabel: string; url: string }[],
+    downloadUrl: 'https://drive.usercontent.google.com/download?id=1blqOMGR-K7hXH_k7-8wpAX1lGE6Iup_3&export=download&authuser=0&confirm=t&uuid=ab6c7d49-d2e6-4307-9c94-162d43f76517&at=AMrWOn1MRy_2On2sEIgXnOZSX8M_:1794394015738',
+    downloads: [] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
     screenshots: [
       '/assets/apps/behancekit/interface-1.png',
       '/assets/apps/behancekit/interface-2.png',
