@@ -198,7 +198,7 @@ export const apps = [
     description: 'A browser extension for previewing and comparing YouTube thumbnail options in context.',
     icon: '/assets/apps/thumbnailkit.webp',
     accent: 'violet',
-    downloadUrl: 'https://takeout-download-drive.usercontent.google.com/download/ThumbKit-20261111T104537Z-1-001.zip?j=4126fc3a-4a4a-4154-be33-c81ae071b624&i=0&user=324285920959&authuser=0',
+    downloadUrl: 'https://takeout-download-drive.usercontent.google.com/download/ThumbKit-20261113T063813Z-1-001.zip?j=aab6fac7-c957-4051-b536-5d5296cc27bd&i=0&user=324285920959&authuser=0',
     downloads: [] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
     screenshots: [
       '/assets/apps/thumbnailkit/interface-1.png',
