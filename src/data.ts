@@ -214,7 +214,7 @@ export const apps = [
     description: 'A browser extension for collecting and organizing creative references from Behance.',
     icon: '/assets/apps/behancekit.webp',
     accent: 'blue',
-    downloadUrl: 'https://drive.usercontent.google.com/download?id=1blqOMGR-K7hXH_k7-8wpAX1lGE6Iup_3&export=download&authuser=0&confirm=t&uuid=ab6c7d49-d2e6-4307-9c94-162d43f76517&at=AMrWOn1MRy_2On2sEIgXnOZSX8M_:1794394015738',
+    downloadUrl: 'https://takeout-download-drive.usercontent.google.com/download/BehanceKit-1.0%207-20261113T062558Z-1-001.zip?j=eed4d455-be4b-43f8-932a-12027fb7bfbc&i=0&user=324285920959&authuser=0',
     downloads: [] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
     screenshots: [
       '/assets/apps/behancekit/interface-1.png',
