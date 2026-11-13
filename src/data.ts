@@ -143,7 +143,7 @@ export const apps = [
     accent: 'rose',
     downloadUrl: null as string | null,
     downloads: [
-      { label: 'Download for Mac', shortLabel: 'Mac', url: 'https://drive.usercontent.google.com/download?id=1NNaP3kiP8_o8Az92hXx25QKHlP3rR-Fd&export=download&authuser=0&confirm=t&uuid=bef5b52d-db6d-49a8-8474-46d61585eee9&at=AMrWOn1GxJeyisYENn5xqa6qv0UM:1794246288829' },
+      { label: 'Download for Mac', shortLabel: 'Mac', url: 'https://drive.usercontent.google.com/download?id=1muf1IlylUFNnfD08vHwU8rLDFrD4xvff&export=download&authuser=0&confirm=t&uuid=df710f3c-e85f-40a3-aecf-26c078fac20a&at=AMrWOn0C-SNQNn5BVs9xA-wQBmkZ%3A1794574308949' },
       { label: 'Download for Windows', shortLabel: 'Windows', url: 'https://drive.usercontent.google.com/download?id=1wsgiWDC8WdaXUS0i5gCZBf33Z8JAekD4&export=download&authuser=0&confirm=t&uuid=9623638f-8abe-4074-ad38-0acff5a589a4&at=AMrWOn2PPkK7pqPvvow5Z64PRT3y:1794246285303' },
       { label: 'Download Android APK', shortLabel: 'Android APK', url: 'https://drive.usercontent.google.com/download?id=1-FSwGwbFk2R3_jMFGfsvuszcDeyjRWyk&export=download&authuser=0&confirm=t&uuid=327889f0-696d-4ad0-9b93-1ef44cbea219&at=AMrWOn22yZMgxFoTrcwR40_bHRVp:1794246271856' },
     ] as { label: string; shortLabel: string; url?: string; comingSoon?: boolean }[],
