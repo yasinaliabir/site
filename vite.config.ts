@@ -7,4 +7,21 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3000,
   },
+  build: {
+    target: 'es2020',
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router')) {
+            return 'vendor-react';
+          }
+          if (id.includes('node_modules/lucide-react')) {
+            return 'vendor-icons';
+          }
+          return undefined;
+        },
+      },
+    },
+  },
 });

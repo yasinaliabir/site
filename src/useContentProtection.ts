@@ -80,17 +80,35 @@ export function useContentProtection() {
     };
 
     // 6. Ensure all current and dynamically mounted images have draggable="false"
-    const applyImageAttributes = () => {
-      const images = document.querySelectorAll<HTMLImageElement>('img');
-      images.forEach((img) => {
-        if (img.getAttribute('draggable') !== 'false') {
-          img.setAttribute('draggable', 'false');
+    const markNonDraggable = (node: ParentNode | HTMLImageElement) => {
+      if (node instanceof HTMLImageElement) {
+        if (node.getAttribute('draggable') !== 'false') {
+          node.setAttribute('draggable', 'false');
         }
-      });
+        return;
+      }
+      if ('querySelectorAll' in node) {
+        const images = node.querySelectorAll<HTMLImageElement>('img');
+        for (let i = 0; i < images.length; i += 1) {
+          if (images[i].getAttribute('draggable') !== 'false') {
+            images[i].setAttribute('draggable', 'false');
+          }
+        }
+      }
     };
 
-    applyImageAttributes();
-    const observer = new MutationObserver(applyImageAttributes);
+    markNonDraggable(document.body);
+    const observer = new MutationObserver((mutations) => {
+      for (let i = 0; i < mutations.length; i += 1) {
+        const added = mutations[i].addedNodes;
+        for (let j = 0; j < added.length; j += 1) {
+          const node = added[j];
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            markNonDraggable(node as Element);
+          }
+        }
+      }
+    });
     observer.observe(document.body, { childList: true, subtree: true });
 
     const captureOptions = { capture: true, passive: false };
